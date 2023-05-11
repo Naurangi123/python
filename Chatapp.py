@@ -21,19 +21,19 @@ while True:
         current_time = dt.now().time()
         print(current_time.strftime("%H:%M:%S, %p"))
     elif msg in songsIntent:
-        songs_dir = r"G:\Music\Music"
+        songs_dir = r"D:\Music"
         songs_list = os.listdir(songs_dir)
         song = random.choice(songs_list)
         song_path = songs_dir + "/" + song
         os.startfile(song_path)
     elif msg in movieIntent:
-        movies_dir = r"G:\movies\Bhediya (2022) Hindi 2GB 1080p HQ S-Print Rip x264 AAC - QRips"
+        movies_dir = r"D:\Movies\Barfi 2012 Hindi 720p Blu-Ray x264 AAC 5.1 ESub-HDSector"
         movies_list = os.listdir(movies_dir)
         movie = random.choice(movies_list)
         movie_path = movies_dir + "/" + movie
         os.startfile(movie_path)
     elif msg in photosIntent:
-        photos_dir = r"G:\Realme\Camera"
+        photos_dir = r"D:\Photos"
         photos_list = os.listdir(photos_dir)
         photo = random.choice(photos_list)
         photo_path = photos_dir + "/" + photo
