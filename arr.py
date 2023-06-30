@@ -1,19 +1,22 @@
-arr=[12,34,3,3,5,67,89,45,65,9,12,34,56,7,45,34,90]
+arr=[1,3,2,5,45,78,34,56,89,49,18]
 
 arr1=[]
 arr2=[]
 arr3=[]
 
-for i in arr:
-    if arr[i+1]%3==0:
-        arr.append(arr1)
-        print(arr1)
-    elif arr[i+1]%5==0:
-        arr.append(arr2)
-        print(arr2)
-    elif arr[i+1]%3==0 or arr[i+1]%5==0:
-        arr.append(arr3)
-        print(arr3)
+for i in range(len(arr)):
+    if arr[i]%3==0:
+        arr1.append(arr[i])
+        
+        print('This is arr1',arr1)
+    if arr[i]%5==0:
+        arr2.append(arr[i])
+        
+        print('This is arr2',arr2)
+    if arr[i]%3==0 and arr[i]%5==0:
+        arr3.append(arr[i])
+        
+        print('This is arr3',arr3)
     else:
-        print(arr)
+        print("")
         
